@@ -28,22 +28,25 @@ Text_Summarizer/
 yaml
 Copy code
 
+
 ---
 
 ## ⚙️ Installation and Setup
 
 ### 1️⃣ Clone the repository
-```bash
+
 git clone https://github.com/aaryan7174/Text_Summarizer.git
 cd Text_Summarizer
-2️⃣ Create a virtual environment
-bash
+
+
+### 2️⃣ Create a virtual environment
+
 Copy code
 python -m venv venv
-3️⃣ Activate the environment
+### 3️⃣ Activate the environment
 Windows (PowerShell):
 
-bash ```
+bash 
 
 Copy code
 
@@ -53,22 +56,20 @@ macOS/Linux:
 bash
 Copy code
 source venv/bin/activate
-4️⃣ Install dependencies
+### 4️⃣ Install dependencies
 
 bash
 Copy code
 pip install -r requirements.txt
-5️⃣ Create a .env file
+### 5️⃣ Create a .env file
 Inside your project folder, create a file named .env and add your keys:
 
-ini
-Copy code
 GROQ_API_KEY=your_groq_api_key_here
 LANGCHAIN_API_KEY=your_langchain_api_key_here
-⚠️ Never share or commit your API keys.
+### ⚠️ Never share or commit your API keys.
 GitHub will automatically block commits containing sensitive keys (as you experienced earlier).
 
-🧠 How It Works
+### 🧠 How It Works
 Loads environment variables with dotenv.
 
 Initializes the Groq-powered ChatGroq model (Gemma-7b-It).
@@ -79,7 +80,7 @@ Executes an LLMChain to generate a concise summary.
 
 Optionally translates the output into any specified language (e.g., Hindi, French).
 
-💡 Example
+### 💡 Example
 Input Speech:
 
 "My parents impressed on me the value of hard work, keeping promises, and treating people with respect..."
@@ -88,7 +89,7 @@ Generated Summary (Hindi):
 
 "यह भाषण मेहनत, ईमानदारी और सम्मान के मूल्यों को नई पीढ़ी तक पहुँचाने के महत्व पर केंद्रित है।"
 
-🧰 Tech Stack
+### 🧰 Tech Stack
 Component	Description
 Python	Core programming language
 LangChain	Framework for prompt templating and LLM orchestration
@@ -96,7 +97,7 @@ Groq API	High-speed inference for LLMs
 dotenv	Secure key management
 Jupyter Notebook	Interactive development
 
-🧩 Requirements
+### 🧩 Requirements
 shell
 Copy code
 langchain>=0.2.0
@@ -108,18 +109,19 @@ Install using:
 bash
 Copy code
 pip install -r requirements.txt
-🔐 Security Notes
+### 🔐 Security Notes
 Keep your .env file private.
 
 .gitignore ensures .env and venv/ are never uploaded to GitHub.
 
 Regenerate keys if accidentally exposed.
 
-🌟 Future Enhancements
+### 🌟 Future Enhancements
 Add Streamlit/Flask UI for text input and real-time summarization.
 
 Support for multiple summarization models.
 
 Integrate speech-to-text for summarizing spoken audio.
+
 
 
