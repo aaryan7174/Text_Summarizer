@@ -43,8 +43,10 @@ python -m venv venv
 3️⃣ Activate the environment
 Windows (PowerShell):
 
-bash
+bash ```
+
 Copy code
+
 venv\Scripts\activate
 macOS/Linux:
 
@@ -52,6 +54,7 @@ bash
 Copy code
 source venv/bin/activate
 4️⃣ Install dependencies
+
 bash
 Copy code
 pip install -r requirements.txt
@@ -118,4 +121,5 @@ Add Streamlit/Flask UI for text input and real-time summarization.
 Support for multiple summarization models.
 
 Integrate speech-to-text for summarizing spoken audio.
+
 
